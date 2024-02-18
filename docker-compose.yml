@@ -3,6 +3,6 @@ services:
   nginx:
     image: nginx:latest
     volumes:
-      - .:/usr/share/nginx/html
+      - ./index.html:/usr/share/nginx/html/index.html:ro
     ports:
-      - 80:80
+      - "80:80"
